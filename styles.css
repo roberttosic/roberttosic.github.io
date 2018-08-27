@@ -3,19 +3,21 @@ html{
     width:100%;
 }
 
-@media (max-width:640px) {
-    body {
-      background-attachment:scroll;
-    }
-  }
 
 body{
     background-image:url(images/background.jpg);
     background-position:center;
     background-attachment: fixed;
+    background-size: 100%, 100%; 
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size:cover;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
     font-family: "Verdana";
-    background-repeat:no-repeat;
-    background-size:100% 100vh;
+    min-height: 100%;
    }
 
 #mainTitle{
