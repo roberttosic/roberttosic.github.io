@@ -1,0 +1,197 @@
+body{
+    background-position:center;
+    background-image:url(images/background.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    font-family: "Verdana";
+   }
+
+#mainTitle{
+    text-align: center;
+    padding: 8rem 4rem 6rem 4rem ;
+    min-height: 100vh;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#caption{
+    text-align: center;
+    vertical-align: center;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 125%;
+}
+
+#center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    height: 30%;
+    width: 100%;
+    margin: -15% 0 0 -25%;
+}
+
+#wrapperField{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#title{
+    text-align: center;
+    vertical-align: center;
+    color: #ffffff;
+    font-size: 700%;
+    text-transform: uppercase;
+}
+
+#main{
+    background-color: #ffffff;
+    width: 85%;
+    margin: auto;
+}
+
+#mainHeader{
+    text-align: center;
+    font-size: 70px;
+}
+
+#description{
+    width: 85%;
+    margin: auto;
+}
+
+#barPos{
+    width: 85%;
+    margin: auto;
+    position: absolute;
+    color: #ffffff;
+    height: 10%;
+    background: rgba(255, 255, 255, 0.175);
+    border: 0;
+    line-height: 10rem;
+    bottom: 0;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#barText{
+    color: #ffffff;
+    font-size: 125%;
+    line-height: 0px;
+    display: inline; 
+
+}
+
+
+#grid{
+    width: 85%;
+    margin: auto;
+}
+
+.col-center {
+    display:inline-block;
+    float:none;
+
+  }
+
+.row-center {
+    text-align:center;
+}
+
+#footer{
+    width: 85%;
+    margin: auto;
+    background-color: #909498;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+.navOptions{
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    margin-left: 4%;
+}
+
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .row.no-gutters > [class^="col-"],
+  .row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  .columns{
+      width: 100%;
+  }
+
+.gridWidth{
+    width: 97% !important;
+}
+
+p {
+    font-size: 18px;
+}
+
+.zoomIn img {
+    width: 500px;
+    height: 350px;
+    -webkit-transition: all 0.5s ease;
+       -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+  }
+
+.imgDimensions{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.zoomIn img:hover {
+    width: 525px;
+    height: 365px;
+  }
+
+.frame {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+  }
+
+h1{
+    color: #262626;
+    text-transform: uppercase;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+section,
+footer {
+    margin: 0;
+    padding: 1px; /* tweaked from 0 to 1px */
+}
+
+.field{
+    padding: 1.5rem 0 0 1.5rem;
+}
+
+.overFlow{
+    overflow: hidden;
+}
