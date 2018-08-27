@@ -4,8 +4,8 @@ html{
 }
 
 @media (max-width:640px) {
-    section {
-      background-attachment:initial;
+    body {
+      background-attachment:scroll;
     }
   }
 
