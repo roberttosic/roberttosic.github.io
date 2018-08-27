@@ -4,6 +4,7 @@ html{
 }
 
 body{
+    height: 100vh;
     background-position:center;
     background-image:url(images/background.jpg);
     background-attachment: fixed;
