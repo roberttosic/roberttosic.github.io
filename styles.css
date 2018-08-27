@@ -8,6 +8,7 @@ body{
     background-image:url(images/background.jpg);
     background-attachment: fixed;
     background-size:cover;
+    -webkit-background-size: cover; 
     -moz-background-size: cover;
     -o-background-size: cover;
     font-family: "Verdana";
