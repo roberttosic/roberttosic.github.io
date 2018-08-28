@@ -178,8 +178,8 @@ p {
 }
 
 .zoomIn img {
-    width: 500px;
-    height: 350px;
+    width: 100%;
+    height: auto;
     -webkit-transition: all 0.5s ease;
        -moz-transition: all 0.5s ease;
         -ms-transition: all 0.5s ease;
@@ -193,15 +193,15 @@ p {
 }
 
 .zoomIn img:hover {
-    width: 525px;
-    height: 365px;
+    width: 125%;
+    height: auto;
   }
 
 .frame {
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 500px;
-    height: 350px;
+    width: 100%;
+    height: auto;
     overflow: hidden;
   }
 
