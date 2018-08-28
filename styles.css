@@ -233,6 +233,10 @@ footer {
     p {
         margin: 0 10px;
     }
+
+    #footer{
+        width: 90%;
+    }
 }
 
 @media only screen and (min-width : 992px)  {
