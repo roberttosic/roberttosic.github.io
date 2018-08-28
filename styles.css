@@ -10,11 +10,7 @@ html{
 body{
     background-image:url(images/background.jpg);
     background-position:center;
-    background-attachment: fixed;
-    background-size: 100%, 100%; 
-    -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
+    background-attachment: fixed; 
     background-size:cover;
     -webkit-background-size: cover; 
     -moz-background-size: cover;
@@ -238,3 +234,7 @@ footer {
         margin: 0 10px;
     }
 }
+
+@media only screen and (min-width : 992px)  {
+    background-attachment: fixed;
+} 
