@@ -1,6 +1,9 @@
 html{
     height:100%;
     width:100%;
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
 }
 
 
@@ -18,6 +21,7 @@ body{
     -o-background-size: cover;
     font-family: "Verdana";
     min-height: 100%;
+    margin: 0;
    }
 
 #mainTitle{
@@ -212,16 +216,22 @@ footer {
 
 @media only screen and (max-width: 900px) {
     #caption{
-        font-size: 125%;
-    }
-    #title{
-        font-size: 700%;
+        font-size: 140%;
     }
     p {
-        font-size: 20px;
+        font-size: 21px;
     }
-    #grid{
+    #title{
+        font-size: 725%;
+    }
+    #barPos{
         width: 95%;
+        line-height:4rem;
+
+    }
+    #main{
+        width:95%;
     }
     
+
 }
