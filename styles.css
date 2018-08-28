@@ -218,6 +218,7 @@ p {
 h1{
     color: #262626;
     text-transform: uppercase;
+    font-size: 1.5vw;
 }
 
 body {
