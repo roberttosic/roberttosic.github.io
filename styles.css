@@ -68,12 +68,20 @@ body{
     margin: auto;
 }
 
-#mainHeader{
+#projects{
+    background-color: #f7f7f7;
+    width: 85%;
+    margin: auto;
+}
+
+
+
+.mainHeader{
     text-align: center;
     font-size: 70px;
 }
 
-#description{
+.description{
     width: 85%;
     margin: auto;
 }
@@ -103,7 +111,7 @@ body{
 }
 
 
-#grid{
+.grid{
     width: 85%;
     margin: auto;
 }
@@ -121,7 +129,7 @@ body{
 #footer{
     width: 85%;
     margin: auto;
-    background-color: #909498;
+    background-color: #ffffff;
 }
 
 .no-padding {
@@ -229,7 +237,9 @@ footer {
         width:90%;
     }
 
-
+    #projects{
+        width: 90%;
+    }
     p {
         margin: 0 10px;
     }
