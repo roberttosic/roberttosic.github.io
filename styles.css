@@ -100,7 +100,7 @@ body{
 
 #barPos{
     width: 85%;
-    margin: auto;
+    margin: 0px;
     position: absolute;
     color: #ffffff;
     height: 10%;
@@ -115,8 +115,6 @@ body{
 }
 
 #barText{
-    display: table-cell;
-    vertical-align: middle;
     height: 100%;
     color: #ffffff;
     font-size: 125%;
@@ -153,16 +151,16 @@ body{
   }
 
 .navOptions{
-    display: table;
     letter-spacing: 0.075em;
     text-transform: uppercase;
     margin-left: 4%;
-    height: 100%;
+    padding-left: 0;
 }
 
 .ulFillout{
     position: absolute;
     height:100%;
+    display:table;
 }
 
 .row.no-gutters {
@@ -276,6 +274,12 @@ footer {
     }
     .navOptions{
         height: 35px;
+    }
+
+    h1{
+        color: #262626;
+        text-transform: uppercase;
+        font-size: 30px;
     }
 }
 
