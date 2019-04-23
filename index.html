@@ -1,219 +1,318 @@
 <!DOCTYPE HTML>
-
+<!--
+	Directive by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-    <head>
-        <meta name="viewport" content="width=100%, initial-scale=0.58">
-        <title>Robert Tosic's Portfolio</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles.css">
+<head>
+    <title>Robert Tosic's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-        <script type="text/javascript">
-            $(function() {
-                
-                var documentEl = $(document),
-                    fadeElem = $('.target');
-                
-                
-                documentEl.on('scroll', function() {
-                    var currScrollPos = documentEl.scrollTop();
-                    
-                    fadeElem.each(function() {
-                        var $this = $(this),
-                            elemOffsetTop = $this.offset().top;
-                        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
-                    }); 
-                });
-                
-            });
-        </script>
 
-    </head>
 
-    <body>
-        <div class="background"></div>
-        <header id="mainTitle" class="target">
-            <div id="center">
-                <p id="title"><h1 id="title">My Portfolio</h1></p>
-                <br>
-                <p id="caption">
-                    A collection of the various projects I've made and knowledge I have gained from my career as a Computer Scientist.
-                </p>
-            </div>
-            
+
+</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+                <img width="85px" height="85px" style="border-radius: 50%;" src="images/profile.jpg" alt="Avatar">
+				<h1>Robert Tosic</h1>
+				<p>An overview of the different projects that I have worked on and finished, <br /> as well as a preview of what I am currently working on as an aspiring developer.</p>
+			</div>
+
+		<!-- Main -->
+            <div id="main">
+
+                <!-- The Modal -->
+                <div id="vrModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <iframe width="520" height="315" src="https://www.youtube.com/embed/r0TOIxdDIfM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2gEmrvdunsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <br /><br />
+                        <a href="https://gitlab.scs.ryerson.ca/rtosic/Boxing-Project">Repository for the Boxing Simulator</a>
+                    </div>
+
+                </div>
+
+
+                <!-- The Modal -->
+                <div id="demonModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p><p><a href="https://play.google.com/store/apps/details?id=com.tosastudio.demonrun">Demon Run on Google Play</a><br />
+                        <br /><a href="https://itunes.apple.com/us/app/demon-run/id1455304098?ls=1&mt=8">Demon Run on the App Store</a></p></p>
+                    </div>
+
+                </div>
+
+
+                <!-- The Modal -->
+                <div id="soundModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p><p>
+                            <a href="https://play.google.com/store/apps/details?id=io.github.httpsroberttosic.soundboard">Basketball Sounds on Google Play</a><br />
+                            <br /><a href="https://itunes.apple.com/us/app/sounds-of-warcraft/id1445634357?ls=1&mt=8">Sounds of Warcraft on the App Store</a>
+                        </p></p>
+                    </div>
+
+                </div>
+
+
+                <header class="major container medium">
+                    <h2>
+                        Projects
+                    </h2>
+                </header>
+
+                <div class="box alt container">
+                    <section class="feature left">
+                        <a id="demon" href="javascript:void" class="image icon"><img src="images/DemonRunLogo.png" width="100%" height="100%" alt="" /></a>
+                        <div class="content">
+                            <a id="demon2" href="javascript:void"><h3>Demon Run</h3></a>
+                            <p>Using Unity Game Engine and C# as the script language, Demon Run is a mobile game that is avaliable for iOS as well as Android that consists of collecting coins while avoiding obsticles and the demon chasing from behind.</p>
+                        </div>
+                    </section>
+                    <section class="feature right">
+                        <a id="vr" href="javascript:void" class="image icon"><img src="images/boxing.png" width="100%" height="100%" alt="" /></a>
+                        <div class="content">
+                            <a id="vr2" href="javascript:void"><h3>VR Boxing Simulator</h3></a>
+                            <p>Created in Unity and written in C#, this project provides the user a chance to hone their boxing skills in a controlled virtual reality environment. The user may opt to practice while hitting a punching bag, or, they have the chance to face a friend in local multiplayer.</p>
+                        </div>
+                    </section>
+                    <section class="feature left">
+                        <a href="https://github.com/roberttosic/Light-DES" class="image icon"><img src="images/crypto.jpg" alt="" width="100%" height="100%" /></a>
+                        <div class="content">
+                            <a href="https://github.com/roberttosic/Light-DES"><h3>Light DES</h3></a>
+                            <p>Written in C, this project is a light recreation of the Data Encryption Standard, or DES for short. It allows the user to either encrypt or decrypt a message using different DES modes, and a key and number of rounds of the users choosing.</p>
+                        </div>
+                    </section>
+                    <section class="feature right">
+                        <a href="https://github.com/roberttosic/Peer-to-Peer-Files" class="image icon"><img src="images/p2p.jpg" width="100%" height="100%" alt="" /></a>
+                        <div class="content">
+                            <a href="https://github.com/roberttosic/Peer-to-Peer-Files"><h3>Peer to Peer Client</h3></a>
+                            <p>Written in Java, this peer to peer program allows the user to establish their computer as a client and a server using multi-threading, allowing them to be able to not only send another peer a file upon request, but also download a file given the right information.</p>
+                        </div>
+                    </section>
+                    <section class="feature left">
+                        <a id="sound" href="javascript:void" class="image icon"><img src="images/sound.png" width="100%" height="100%" alt="" /></a>
+                        <div class="content">
+                           <a id="sound2" href="javascript:void"><h3>Mobile Soundboard Application</h3></a> 
+                            <p>Written in Swift for the iOS soundboard, and XML + Java for the Android soundboard, these applications let you play sounds from the NBA on the Android version, and the Warcraft universe for the iOS version.</p>
+                        </div>
+                    </section>
+
+                    <section class="feature right">
+                        <a href="https://github.com/roberttosic/File-Sharing-Network" class="image icon"><img src="images/dns.png" width="100%" height="100%" alt="" /></a>
+                        <div class="content">
+                            <a href="https://github.com/roberttosic/File-Sharing-Network"><h3>File Sharing Network</h3></a>
+                            <p>Written in Java, there are local versions of a web server, a DNS server, multiple authoritative DNS servers, and a content server that connect and communicate together to facilitate file sharing.</p>
+                        </div>
+                    </section>
+                    <section class="feature left">
+                        <a href="https://github.com/roberttosic/Museum-Webpage" class="image icon"><img src="images/sql.jpg" width="100%" height="100%" alt="" /></a>
+                        <div class="content">
+                            <a href="https://github.com/roberttosic/Museum-Webpage>"><h3>Webpages using databases</h3></a>
+                            <p>Using HTML, CSS, JavaScript, PHP to create the website, and MySQL to create and configure the database, these files represent a very basic webpage that was made to be able to select or look up different artists or museums, and retrieve the data from the SQL database. (No database values provided)</p>
+                        </div>
+                    </section>
+                </div>
+                <!--
+    <div class="box container">
+        <header>
+            <h2>A lot of generic stuff</h2>
         </header>
-        <nav class="navbar navbar-inverse" id="barPos">
-            <ul class="nav navbar-nav columns ulFillout">
-                <li class="navOptions"><a id="barText" href="#descripLink">About Me</a></li>
-                <li class="navOptions"><a id="barText" href="#projects">Current/Former Projects</a></li>
-                <li class="navOptions"><a id="barText" href="#footer">Contact Me</a></li>
+        <section>
+            <header>
+                <h3>Paragraph</h3>
+                <p>This is the subtitle for this particular heading</p>
+            </header>
+            <p>Phasellus nisl nisl, varius id <sup>porttitor sed pellentesque</sup> ac orci. Pellentesque
+            habitant <strong>strong</strong> tristique <b>bold</b> et netus <i>italic</i> malesuada <em>emphasized</em> ac turpis egestas. Morbi
+            leo suscipit ut. Praesent <sub>id turpis vitae</sub> turpis pretium ultricies. Vestibulum sit
+            amet risus elit.</p>
+        </section>
+        <section>
+            <header>
+                <h3>Blockquote</h3>
+            </header>
+            <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget.
+            tempus euismod. Vestibulum ante ipsum primis in faucibus.</blockquote>
+        </section>
+        <section>
+            <header>
+                <h3>Divider</h3>
+            </header>
+            <p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+            ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+            facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+            tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia.</p>
+            <hr />
+            <p>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra
+            ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel. Praesent nec orci
+            facilisis leo magna. Cras sit amet urna eros, id egestas urna. Quisque aliquam
+            tempus euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia.</p>
+        </section>
+        <section>
+            <header>
+                <h3>Unordered List</h3>
+            </header>
+            <ul class="default">
+                <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
             </ul>
-        </nav>
-
-        <div id="main">
-            <br><br>
-            <div id="descripLink"></div>
-            <p class="mainHeader"><h1 class="mainHeader">About Me</h1></p>
-            <br><br>
-            <p class="description">
-                My name is Robert Tosic, and I am a computer scientist striving to be the best I can possibly be. Driven by a desire to continue to learn, I have explored through the various field in Computer Science and Technology with an open mind, ready to tackle anything that comes my way. On this website, I provide a basic description on skills and knowledge I possess, as well as showcasing some of the projects I created and worked on personally (including this very website).
-                <br><br>
-                I have taken courses and accumulated knowledge across a vast number of topics. I have created virtual reality applications, developed P2P (peer to peer) and client/server programs to establish these networks/connections, studied about various forms of encryption in order to personally create a light version of DES, among many other things. I have also delved into much of the theory of these topics, like the concepts behind the functionality of the internet, artifical intelligence and the functional calculus and the ideas that come with it, learning how the computer processes and creates geometry as it displays it on the screen, how machines and operating systems work, and so much more. 
-                <br><br>
-                As for skills that I have obtained, I am knowledgable and comfortable with C/C++/C#, SQL, Java, Python, Rust, and HTML/CSS/JavaScript/Perl/Django/PHP. I have developed applications with both OpenGL and Unity Game Engine. Along with the projects presented in detail below, I have also done a lot of front end and back end work with various small websites, creating search engines with linked databases, as well as using frameworks and libraries to help create a user friendly front end experience.
-                <br><br>
-                I currently work for the Bank of Montreal as a member of their IT Operations team. In this position, I have developed a deeper understanding on how servers work and interact with each other, as well as further cementing my knowledge on the fundemental theories and building blocks of computers. I mainly use AS/400 and IBM Mainframe in order to monitor the environment and manipulate the various servers and applications they house if need be.  
-            </p>
-            <br><br><br>
-        </div>
-        <div id="projects">
-            <br>
-            <p class="mainHeader"><h1 class="mainHeader">Projects</h1></p>
-            <br><br>
-            <div class="container-fluid gridWidth overFlow grid" >
-                <div class="row row-center ">
-                        <div class="col-md-4">
-                            <a href ="boxing.html">
-                                <h1>VR Boxing Simulator</h1>
-                            </a>
-                            <div class="zoomIn frame imgDimensions">
-                                <a href ="boxing.html">
-                                    <img class="img-fluid" src="images/vr.jpg" alt="Person playing VR">
-                                </a>
-                            </div>
-                            <p>
-                                Created in Unity and written in C#, this project provides the user a chance to hone their boxing skills in a controlled virtual reality environment. The user may opt to practice while hitting a punching bag, or, they have the chance to face a friend in local multiplayer.
-                            </p>
-                                
-                        </div>
-                    <div class="col-md-4">
-                        <a href ="https://github.com/roberttosic/Light-DES">
-                            <h1>Light DES</h1>
-                        </a>
-                        <div class="zoomIn frame imgDimensions">
-                            <a href ="https://github.com/roberttosic/Light-DES">
-                                <img class="img-fluid" src="images/crypto.jpg" alt="Stock crypto photo.">
-                            </a>
-                        </div>
-                        <p>
-                            Written in C, this project is a light recreation of the Data Encryption Standard, or DES for short. It allows the user to either encrypt or decrypt a message using different DES modes, and a key and number of rounds of the users choosing.
-                        </p>
-                            
+        </section>
+        <section>
+            <header>
+                <h3>Ordered List</h3>
+            </header>
+            <ol class="default">
+                <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+                <li>Donec consectetur vestibulum dolor et pulvinar. Etiam vel felis enim, at viverra ligula. Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</li>
+            </ol>
+        </section>
+        <section>
+            <header>
+                <h3>Table</h3>
+            </header>
+            <div class="table-wrapper">
+                <table class="default">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>45815</td>
+                            <td>Something</td>
+                            <td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+                            <td>29.99</td>
+                        </tr>
+                        <tr>
+                            <td>24524</td>
+                            <td>Nothing</td>
+                            <td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+                            <td>19.99</td>
+                        </tr>
+                        <tr>
+                            <td>45815</td>
+                            <td>Something</td>
+                            <td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+                            <td>29.99</td>
+                        </tr>
+                        <tr>
+                            <td>24524</td>
+                            <td>Nothing</td>
+                            <td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+                            <td>19.99</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3"></td>
+                            <td>100.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <section>
+            <header>
+                <h3>Form</h3>
+            </header>
+            <form method="post" action="#">
+                <div class="row">
+                    <div class="col-6 col-12-mobilep">
+                        <label for="name">Name</label>
+                        <input class="text" type="text" name="name" id="name" value="" placeholder="John Doe" />
                     </div>
-                    <div class="col-md-4">
-                        <a href ="https://github.com/roberttosic/Peer-to-Peer-Files">
-                            <h1>Peer to Peer Client</h1>
-                        </a>
-                        <div class="zoomIn frame imgDimensions">
-                            <a href ="https://github.com/roberttosic/Peer-to-Peer-Files">
-                                <img class="img-fluid" src="images/p2p.jpg" alt="Connected computers">
-                            </a>
-                        </div>
-                        <p>
-                            Written in Java, this peer to peer program allows the user to establish their computer as a client and a server using multi-threading, allowing them to be able to not only send another peer a file upon request, but also download a file given the right information.
-                        </p>
-                            
+                    <div class="col-6 col-12-mobilep">
+                        <label for="email">Email</label>
+                        <input class="text" type="text" name="email" id="email" value="" placeholder="johndoe@domain.tld" />
+                    </div>
+                    <div class="col-12">
+                        <label for="subject">Subject</label>
+                        <input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
+                    </div>
+                    <div class="col-12">
+                        <label for="subject">Message</label>
+                        <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <ul class="actions special">
+                            <li><input type="submit" value="Send" /></li>
+                            <li><input type="reset" value="Reset" class="alt" /></li>
+                        </ul>
                     </div>
                 </div>
-                <br><br>
-                <div class="row row-center row">
-                        <div class="col-md-4">
-                            <a href ="https://github.com/roberttosic/File-Sharing-Network">
-                                <h1>File Sharing Network</h1>
-                            </a>
-                            <div class="zoomIn frame imgDimensions">
-                                <a href ="https://github.com/roberttosic/File-Sharing-Network">
-                                    <img class="img-fluid" src="images/dns.png" alt="Handshake Agreement">
-                                </a>
-                            </div>
-                            <p>
-                                Written in Java, there are local versions of a web server, a DNS server, multiple authoritative DNS servers, and a content server that connect and communicate together to facilitate file sharing.
-                            </p>
-                                
-                        </div>
-                    <div class="col-md-4">
-                        <a href ="https://github.com/roberttosic/Museum-Webpage">
-                            <h1>PHP & Databases</h1>
-                        </a>
-                        <div class="zoomIn frame imgDimensions">
-                        <a href ="https://github.com/roberttosic/Museum-Webpage">
-                            <img class="img-fluid" src="images/phpmysql.jpg" alt="PHP and MySql Logo">
-                        </a>
-                        </div>
-                        <p>
-                            Using HTML, CSS, JavaScript, PHP to create the website, and MySQL to create and configure the database, these files represent a very basic webpage that was made to be able to select or look up different artists or museums, and retrieve the data from the SQL database. (No database values provided)
-                        </p>
-                            
-                    </div>
-                    <div class="col-md-4">
-                        <a href ="https://github.com/roberttosic/Website-Template">
-                            <h1>Webpage Template</h1>
-                        </a>
-                        <div class="zoomIn frame imgDimensions">
-                            <a href ="https://github.com/roberttosic/Website-Template">
-                                <img class="img-fluid" src="images/html.png" alt="Monitor with website">
-                            </a>
-                        </div>
-                        <p>
-                            Using HTML, CSS, and Bootstrap, this is an example of taking a image or PSD file mockup from an application like Zeplin, and turning it into a working HTML template.
-                        </p>
-                            
-                    </div>
-                </div>
-                <br><br>
+            </form>
+        </section>
+    </div>
+    -->
+
+                <footer class="major container medium">
+                    <h3>In Development</h3>
+                    <p>Still in early development stages.</p>
+                </footer>
 
             </div>
-        </div>
-    </body>
 
-        <footer id="footer">
-            <br><br>
-            <p class="description">
-                 Below are a couple of bits of personal information if needed, as well as methods of contact if you wish to reach out to me to speak about something, and I will do my best to respond as soon as possible.
-            </p>
-            <br><br>
-            <div class="container-fluid gridWidth overFlow grid" >
-                    <div class="row row-center ">
-                            <div class="col-md-4">
-                                <img class="img-fluid" src="images/home.png" alt="house icon">
-                                <br><br>
-                                <p>
-                                    24 Forest Manor Rd.
-                                </p>
-                                <p>
-                                    Toronto, Ontario
-                                </p>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4">
-                                <img class="img-fluid" src="images/mail.png" alt="envelope icon">
-                                <br><br>
-                                <p>
-                                    roberttosic@gmail.com
-                                </p>
-                                <br><br>
-                            </div>
-                            <div class="col-md-4">
-                                <img class="img-fluid" src="images/telephone.png" alt="telephone icon">
-                                <br><br>
-                                <p>
-                                    (Cell Phone/Primary) 416-859-6829
-                                </p>
-                                <p>
-                                    (Home/Secondary) 416-493-6829
-                                </p>
-                                <br><br>
-                            </div>
-                     </div>
-            </div>
-            <hr>
-            <br><br>
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container medium">
 
-        </footer>
-        <br><br>
-        <br><br>
+					<header class="major last">
+						<h2>Questions or inqueries?</h2>
+					</header>
+
+					<p>Feel free to contact me in any of the following ways. <br /><br />
+                    Phone Number: (416) 859-6829<br />
+                    Email Address: roberttosic@gmail.com<br />
+                 
+                    </p>
+                    
+
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/robert-tosic-a1a597160/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Tosa Studios. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
 
- 
+
+	</body>
 </html>
