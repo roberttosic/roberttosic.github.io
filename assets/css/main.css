@@ -72,6 +72,11 @@ body {
 	line-height: 1;
 }
 
+iframe {
+    width: 80%;
+    height: 18em;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -2206,11 +2211,13 @@ input, select, textarea {
 
 /* Image */
 
-	.image {
-		border: 0;
-		display: inline-block;
-		position: relative;
-	}
+.image {
+    border: 0;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: auto
+}
 
 		.image:after {
 			-moz-transition: opacity 0.25s ease-in-out;
@@ -3183,7 +3190,7 @@ input, select, textarea {
 
 				.feature .image {
 					float: none;
-					height: 15em;
+					height: 18em;
 					width: 100%;
 				}
 
